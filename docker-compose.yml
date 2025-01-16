@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  plate:
+    build: .
+    restart: no
+    volumes:
+      - ./in:/app/in
+      - ./out:/ultralytics/runs/detect
+#    devices:
+#      - /dev/dri:/dev/dri # VAAPI/NVDEC/NVENC render nodes
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#            - driver: nvidia
+#              count: 1
+#              capabilities: [gpu]
