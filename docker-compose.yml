@@ -4,7 +4,7 @@ services:
     restart: no
     volumes:
       - ./in:/app/in
-      - ./out:/ultralytics/runs/detect
+      - ./out:/app/out
 #    devices:
 #      - /dev/dri:/dev/dri # VAAPI/NVDEC/NVENC render nodes
 #    deploy:
