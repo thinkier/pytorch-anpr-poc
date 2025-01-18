@@ -1,0 +1,8 @@
+.idea
+*.iml
+
+# I don't wanna pay for LFS
+*.pt
+
+in/
+out/
