@@ -1,7 +1,5 @@
-version: "3"
-
 services:
-  plate:
+  anpr:
     build: .
     restart: no
     volumes:
