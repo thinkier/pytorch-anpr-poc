@@ -6,8 +6,10 @@ RUN pip install dill pydantic lmdb
 RUN git clone https://github.com/baudm/parseq .
 RUN pip install -r requirements/core.txt
 
-WORKDIR /root/.cache/torch/hub/checkpoints
 WORKDIR /app
+COPY install.py install.py
+RUN python3 install.py
+
 COPY . .
 RUN mv parseq-*.pt /root/.cache/torch/hub/checkpoints/
 
